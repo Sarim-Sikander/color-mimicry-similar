@@ -7,16 +7,18 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-medimate-primary to-medimate-light">
       {/* Navigation */}
-      <nav className="p-4 flex justify-between items-center">
+      <nav className="p-4 flex items-center">
         <div className="flex items-center space-x-2">
           <Stethoscope className="w-6 h-6 text-white" />
           <span className="text-white text-xl font-semibold">MediMate</span>
         </div>
-        <div className="flex space-x-6 items-center">
+        <div className="flex-1 flex justify-center space-x-6 items-center">
           <a href="#" className="text-white hover:text-medimate-light transition-colors">Home</a>
           <a href="#" className="text-white hover:text-medimate-light transition-colors">About Us</a>
           <a href="#" className="text-white hover:text-medimate-light transition-colors">Services</a>
           <a href="#" className="text-white hover:text-medimate-light transition-colors">Contact</a>
+        </div>
+        <div className="flex space-x-4">
           <Button variant="ghost" className="text-white hover:text-medimate-light">Login</Button>
           <Button className="bg-white text-medimate-primary hover:bg-medimate-light">Sign up</Button>
         </div>
