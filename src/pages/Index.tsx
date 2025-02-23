@@ -1,9 +1,11 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Stethoscope, Clock, FileText, Sparkles } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-medimate-primary to-medimate-light">
       {/* Navigation */}
@@ -28,11 +30,15 @@ const Index = () => {
           <Button 
             variant="ghost" 
             className="text-white hover:bg-transparent hover:text-medimate-light transition-all duration-300 hover:scale-105"
+            onClick={() => navigate("/auth")}
           >
             Login
           </Button>
           <Button 
             className="bg-medimate-accent text-white hover:bg-medimate-accent/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            onClick={() => {
+              navigate("/auth");
+            }}
           >
             Sign up
           </Button>
