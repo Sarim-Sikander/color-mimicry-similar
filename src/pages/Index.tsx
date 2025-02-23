@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Stethoscope, Clock, FileText } from "lucide-react";
@@ -18,8 +19,8 @@ const Index = () => {
           <a href="#" className="text-white hover:text-medimate-light transition-colors">Contact</a>
         </div>
         <div className="flex space-x-4">
-          <Button variant="ghost" className="text-white hover:text-medimate-light">Login</Button>
-          <Button className="bg-white text-medimate-primary hover:bg-medimate-light">Sign up</Button>
+          <Button variant="ghost" className="text-white hover:bg-transparent hover:text-medimate-light">Login</Button>
+          <Button className="bg-medimate-accent text-white hover:bg-medimate-accent/90">Sign up</Button>
         </div>
       </nav>
 
@@ -32,7 +33,7 @@ const Index = () => {
           <p className="text-lg text-white/90 mb-8">
             Get instant medical guidance with our AI assistant. Whether you need quick answers, health advice, or support, our smart AI is here to assist you 24/7. Start your conversation now and take control of your well-being!
           </p>
-          <Button className="bg-white text-medimate-primary hover:bg-medimate-light text-lg px-8 py-6">
+          <Button className="bg-medimate-accent text-white hover:bg-medimate-accent/90 text-lg px-8 py-6">
             Ask AI Assistant
           </Button>
         </div>
