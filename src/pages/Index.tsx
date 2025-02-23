@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Stethoscope, Clock, FileText } from "lucide-react";
@@ -25,8 +24,8 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 flex items-center justify-between">
-        <div className="max-w-2xl animate-fadeIn">
+      <section className="container mx-auto px-4 py-20 flex items-center justify-center">
+        <div className="max-w-3xl text-center animate-fadeIn">
           <h1 className="text-5xl font-bold text-white mb-6">
             Your AI-Powered Health Companion
           </h1>
@@ -36,13 +35,6 @@ const Index = () => {
           <Button className="bg-white text-medimate-primary hover:bg-medimate-light text-lg px-8 py-6">
             Ask AI Assistant
           </Button>
-        </div>
-        <div className="hidden lg:block w-1/2">
-          <img 
-            src="/lovable-uploads/9776966b-e23d-4745-bb91-4319372b7d47.png" 
-            alt="AI Health Assistant" 
-            className="w-full h-auto rounded-lg shadow-xl"
-          />
         </div>
       </section>
 
